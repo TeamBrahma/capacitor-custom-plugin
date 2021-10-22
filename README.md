@@ -14,6 +14,7 @@ npx cap sync
 <docgen-index>
 
 * [`echo(...)`](#echo)
+* [`getContacts(...)`](#getcontacts)
 
 </docgen-index>
 
@@ -29,6 +30,21 @@ echo(options: { value: string; }) => any
 | Param         | Type                            |
 | ------------- | ------------------------------- |
 | **`options`** | <code>{ value: string; }</code> |
+
+**Returns:** <code>any</code>
+
+--------------------
+
+
+### getContacts(...)
+
+```typescript
+getContacts(filter: string) => any
+```
+
+| Param        | Type                |
+| ------------ | ------------------- |
+| **`filter`** | <code>string</code> |
 
 **Returns:** <code>any</code>
 

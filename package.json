@@ -1,5 +1,5 @@
 {
-  "name": "custom",
+  "name": "@brahmaesolutions/native",
   "version": "0.0.1",
   "description": "Android native plugin for Ionic (Capacitor)",
   "main": "dist/plugin.cjs.js",
@@ -17,10 +17,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Jeeva111/prototype.git.git"
+    "url": "git+https://github.com/TeamBrahma/capacitor-native-plugins.git.git"
   },
   "bugs": {
-    "url": "https://github.com/Jeeva111/prototype.git/issues"
+    "url": "https://github.com/TeamBrahma/capacitor-native-plugins.git/issues"
   },
   "keywords": [
     "capacitor",
