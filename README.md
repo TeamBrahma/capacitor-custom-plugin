@@ -73,25 +73,6 @@ getContacts(filter: string) => any
 
 **Returns:** <code>any</code>
 
-<code>Example</code>
-```typescript
-import React, { useState, useEffect } from 'react';
-import { Contacts } from '@brahmaesolutions/native';
-
-const App: React.FC = () => {
-
-    const [contacts, setContacts] = useState<any>(null);
-    useEffect(() => {
-        Contacts.getContacts("").then((res:any) => setContacts(res));
-    },[]);
-
-    return (
-        <p>{JSON.stringfy(contacts)}</p>
-    );
-
-}
-```
-
 --------------------
 
 </docgen-api>
