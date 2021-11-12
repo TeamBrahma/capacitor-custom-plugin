@@ -9,7 +9,31 @@ npm install @brahmaesolutions/native
 yarn add @brahmaesolutions/native
 npx cap sync
 ```
-
+````diff
+package io.ionic.starter;
++ import com.brahma.plugins.custom.CustomPlugin;
+ 
+import android.os.Bundle;
+ 
+import com.getcapacitor.BridgeActivity;
+import com.getcapacitor.Plugin;
+ 
+import java.util.ArrayList;
+ 
+public class MainActivity extends BridgeActivity {
+    @Override
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    
+        // Initializes the Bridge
+        this.init(savedInstanceState, new ArrayList<Class<? extends Plugin>>() {{
+            // Additional plugins you have installed go here
++           add(CustomPlugin.class); </span>
+        }});
+    }
+ 
+}
+````
 ## API
 
 <docgen-index>
@@ -48,6 +72,25 @@ getContacts(filter: string) => any
 | **`filter`** | <code>string</code> |
 
 **Returns:** <code>any</code>
+
+<code>Example</code>
+```typescript
+import React, { useState, useEffect } from 'react';
+import { Contacts } from '@brahmaesolutions/native';
+
+const App: React.FC = () => {
+
+    const [contacts, setContacts] = useState<any>(null);
+    useEffect(() => {
+        Contacts.getContacts("").then((res:any) => setContacts(res));
+    },[]);
+
+    return (
+        <p>{JSON.stringfy(contacts)}</p>
+    );
+
+}
+```
 
 --------------------
 
