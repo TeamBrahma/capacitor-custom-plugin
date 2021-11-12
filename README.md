@@ -6,6 +6,7 @@ Android native plugin for Ionic (Capacitor)
 
 ```bash
 npm install @brahmaesolutions/native
+yarn add @brahmaesolutions/native
 npx cap sync
 ```
 
