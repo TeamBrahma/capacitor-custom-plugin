@@ -28,7 +28,7 @@ public class MainActivity extends BridgeActivity {
         // Initializes the Bridge
         this.init(savedInstanceState, new ArrayList<Class<? extends Plugin>>() {{
             // Additional plugins you have installed go here
-+           add(CustomPlugin.class); </span>
++           add(CustomPlugin.class);
         }});
     }
  
@@ -74,5 +74,11 @@ getContacts(filter: string) => any
 **Returns:** <code>any</code>
 
 --------------------
-
+ ## Example
+```bash
+import { Contacts } from '@brahmaesolutions/native';
+Contacts.getContacts("").then((result: any) => {
+    console.log(result['results']);
+})
+ ````
 </docgen-api>
